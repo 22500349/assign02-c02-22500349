@@ -13,47 +13,9 @@
       color: #2c3e50;
       line-height: 1.6;
     }
-    .hero {
-      background: linear-gradient(135deg, #2c3e50, #3498db);
-      color: #ffffff;
-      text-align: center;
-      padding: 60px 20px;
-    }
-    .hero h1 { margin: 0 0 10px; font-size: 34px; }
-    .hero p { margin: 0; opacity: 0.9; }
-
-    .container { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
-    h2 { color: #2980b9; }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-      margin-top: 20px;
-    }
-    .card {
-      display: block;
-      background: #ffffff;
-      border: 1px solid #e1e5ea;
-      border-radius: 10px;
-      padding: 22px;
-      text-decoration: none;
-      color: inherit;
-      transition: transform .12s ease, box-shadow .12s ease;
-    }
-    .card:hover { transform: translateY(-4px); box-shadow: 0 6px 18px rgba(0,0,0,.08); }
-    .card h3 { margin: 0 0 8px; color: #16a085; }
-    .card p { margin: 0; font-size: 14px; color: #7f8c8d; }
-
-    .footer {
-      text-align: center;
-      padding: 24px;
-      color: #7f8c8d;
-      font-size: 14px;
-    }
-    .footer a { color: #2980b9; }
   </style>
 </head>
+
 <body>
   <div class="hero">
     <h1>OSS Assignment 02</h1>
@@ -64,23 +26,23 @@
     <h2>제작한 페이지</h2>
     <p>같은 HTML 구조에 스타일을 다르게 적용해 화면이 어떻게 달라지는지 비교해 보세요.</p>
 
-    <div class="cards">
-      <a class="card" href="nostyle.html">
+    <div>
+
+      <a class href="nostyle.html">
         <h3>No Style</h3>
         <p>CSS 없이 HTML 구조만으로 만든 기본 페이지</p>
       </a>
-      <a class="card" href="style1.html">
+
+      <a class href="style1.html">
         <h3>Style 1</h3>
-        <p>밝은 테마 · 상단 가로 네비게이션</p>
+        <p>내 스타일1</p>
       </a>
-      <a class="card" href="style2.html">
+
+      <a class href="style2.html">
         <h3>Style 2</h3>
-        <p>다크 테마 · 좌측 사이드바 네비게이션</p>
+        <p>내 스타일2</p>
       </a>
-      <a class="card" href="bootstrap_ex.html">
-        <h3>Bootstrap Example</h3>
-        <p>Bootstrap 5.3 Album 예제 재현</p>
-      </a>
+
     </div>
   </div>
 
