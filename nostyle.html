@@ -1,63 +1,50 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>No Style - 선승범 (22500349)</title>
 </head>
+
+
 <body>
-  <!-- ===== Header ===== -->
-  <div class="header">
-    <h1>Welcome to 선승범's Homepage</h1>
-    <p>학번 22500349 · 한동대학교 AI컴퓨터공학부 (전산심화)</p>
-  </div>
+  <!-- ① <header> : h1(제목) + p(안내문) -->
+    <header>
+      <h1>Welcome to 선승범's Homepage (22500349)</h1>
+      <p>Computer Science</p>
+    </header>
 
-  <!-- ===== Navigation ===== -->
-  <div class="navbar">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#hobbies">Hobbies</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
+  <!-- ② <nav> : ul > li 여러 개 > 각 li 안에 a (다른 페이지로 가는 링크) -->
+  <!--    링크 대상: index.html(Home) / nostyle.html / style1.html / style2.html / bootstrap_ex.html -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="style1.html">Stylesheet 1</a></li>
+        <li><a href="style2.html">Stylesheet 2</a></li>
+      </ul>
+    </nav>
+  
 
-  <!-- ===== Main ===== -->
-  <div class="main">
-    <h2 id="about">About Me</h2>
-    <p>안녕하세요. 저는 한동대학교에서 컴퓨터공학을 공부하는 선승범입니다. 오픈소스 소프트웨어 수업에서 HTML과 CSS의 역할을 배우고 있습니다.</p>
+  <!-- ③ <main> : h2 + p, 그리고 다시 h2 + p (내용 2덩어리) -->
+    <main>
+      <h2>Style1</h2>
+      <p>style1의 페이지 입니다</p>
 
-    <h3>전공 &amp; 관심 분야</h3>
-    <ul>
-      <li>웹 개발 (HTML / CSS / JavaScript)</li>
-      <li>오픈소스 협업과 Git 버전 관리</li>
-      <li>AI 활용 개발</li>
-    </ul>
+      <h2>Style2</h2>
+      <p>style2의 페이지 입니다</p>
+    </main>
 
-    <h2 id="projects">Projects</h2>
-    <p>수업과 개인 학습에서 진행한 대표 작업입니다.</p>
+  <!-- ④ <div> : h3 + p  ← 명세 '필수 div'를 여기서 만족 (사이드바 역할) -->
+    <div>
+      <h3>touch me</h3>
+      <p>!touch!</p>
+    </div>
 
-    <h3>My Profile Page (Assignment 01)</h3>
-    <p>자기소개 웹페이지를 제작하고 Git/GitHub와 Vercel 배포를 실습했습니다.</p>
-
-    <h3>Style Practice (Assignment 02)</h3>
-    <p>동일한 HTML에 서로 다른 CSS와 Bootstrap을 적용해 화면이 어떻게 달라지는지 비교했습니다.</p>
-
-    <h2 id="hobbies">Hobbies</h2>
-    <ul>
-      <li>새로운 기술 문서 읽기</li>
-      <li>사이드 프로젝트 만들기</li>
-      <li>음악 감상</li>
-    </ul>
-
-    <h2 id="contact">Contact</h2>
-    <p>GitHub: <a href="https://github.com/22500349">github.com/22500349</a></p>
-  </div>
-
-  <!-- ===== Footer ===== -->
-  <div class="footer">
-    <p><a href="index.html">← Home (index.html 로 돌아가기)</a></p>
-    <p>© 2026 선승범 · OSS Assignment 02</p>
-  </div>
+  <!-- ⑤ <footer> : p (하단 문구, Lorem ipsum 등) -->
+    <footer>
+      <p>22500349_선승범 · OSS Assignment_02</p>
+    </footer>
+    
 </body>
 </html>
