@@ -1,123 +1,116 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Style 2 - 선승범 (22500349)</title>
+  <title>style2 - 선승범 (22500349)</title>
   <style>
-    /* ===== Style 2: 다크 테마 · 좌측 사이드바 네비게이션 · Sans-serif ===== */
-    * { box-sizing: border-box; }
     body {
+      font-family: Arial, sans-serif;
+      line-height: 20px;
       margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: #1b1f24;
-      color: #d7dde3;
-      line-height: 1.7;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .header {
-      width: 100%;
-      background: linear-gradient(90deg, #11998e, #38ef7d);
-      color: #06231f;
-      padding: 30px;
-    }
-    .header h1 { margin: 0 0 6px; font-size: 30px; }
-    .header p { margin: 0; }
-
-    .navbar {
-      width: 220px;
-      background: #12151a;
-      min-height: 420px;
-      padding: 20px 0;
-    }
-    .navbar ul { list-style: none; margin: 0; padding: 0; }
-    .navbar li a {
-      display: block;
-      color: #9aa7b2;
-      text-decoration: none;
-      padding: 12px 24px;
-      border-left: 3px solid transparent;
-    }
-    .navbar li a:hover {
-      color: #38ef7d;
-      border-left-color: #38ef7d;
-      background: #1b1f24;
+      background: #d14836;
+      color: #ffffff;
     }
 
-    .main {
-      flex: 1;
-      min-width: 300px;
-      padding: 30px 40px;
+    header {
+      color: #ffffff;
+      padding: 20px;
+      font-size: 15px;
     }
-    .main h2 { color: #38ef7d; margin-top: 28px; }
-    .main h3 { color: #f6a821; }
-    .main a { color: #38ef7d; }
 
-    .footer {
-      width: 100%;
-      background: #12151a;
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      width: 155px;
+      background: #d14836;
+      border: 5px solid #ffffff;
+      border-radius: 40px;
+      color: #ffffff;
+      list-style: none;
+      padding: 5px;
+      margin: 10px;
       text-align: center;
-      padding: 18px;
-      font-size: 14px;
-      color: #6b7783;
     }
-    .footer a { color: #38ef7d; }
+
+    main {
+      background: #ffffff;
+      color: #000000;
+      padding: 10px;
+      font-size: 80%;
+    }
+
+    h2 {
+      border: 3px solid #ff0000;
+      border-radius: 10px;
+      color: #d14836;
+      font-size: 120%;
+    }
+
+    div {
+      background: #f6dad7;
+      color: #d14836;
+      padding: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      font-size: 70%;
+      color: #ffffff;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
   </style>
 </head>
+
+
 <body>
-  <!-- ===== Header ===== -->
-  <div class="header">
-    <h1>Welcome to 선승범's Homepage</h1>
-    <p>학번 22500349 · 한동대학교 AI컴퓨터공학부 (전산심화)</p>
-  </div>
+  <!-- ① <header> : h1(제목) + p(안내문) -->
+  <header>
+    <h1>Welcome to 선승범's Homepage (22500349)</h1>
+    <p>Computer Science</p>
+  </header>
 
-  <!-- ===== Navigation ===== -->
-  <div class="navbar">
+  <!-- ② <nav> : ul > li 여러 개 > 각 li 안에 a (다른 페이지로 가는 링크) -->
+  <!--    링크 대상: index.html(Home) / nostyle.html / style1.html / style2.html / bootstrap_ex.html -->
+  <nav>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#hobbies">Hobbies</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="style1.html">Stylesheet 1</a></li>
+      <li><a href="style2.html">Stylesheet 2</a></li>
     </ul>
+  </nav>
+
+
+  <!-- ③ <main> : h2 + p, 그리고 다시 h2 + p (내용 2덩어리) -->
+  <main>
+    <h2>Style1</h2>
+    <p>style1의 페이지 입니다</p>
+
+    <h2>Style2</h2>
+    <p>style2의 페이지 입니다</p>
+  </main>
+
+  <!-- ④ <div> : h3 + p  ← 명세 '필수 div'를 여기서 만족 (사이드바 역할) -->
+  <div>
+    <h3>touch me</h3>
+    <p>!touch!</p>
   </div>
 
-  <!-- ===== Main ===== -->
-  <div class="main">
-    <h2 id="about">About Me</h2>
-    <p>안녕하세요. 저는 한동대학교에서 컴퓨터공학을 공부하는 선승범입니다. 오픈소스 소프트웨어 수업에서 HTML과 CSS의 역할을 배우고 있습니다.</p>
+  <!-- ⑤ <footer> : p (하단 문구, Lorem ipsum 등) -->
+  <footer>
+    <p>22500349_선승범 · OSS Assignment_02</p>
+  </footer>
 
-    <h3>전공 &amp; 관심 분야</h3>
-    <ul>
-      <li>웹 개발 (HTML / CSS / JavaScript)</li>
-      <li>오픈소스 협업과 Git 버전 관리</li>
-      <li>AI 활용 개발</li>
-    </ul>
-
-    <h2 id="projects">Projects</h2>
-    <p>수업과 개인 학습에서 진행한 대표 작업입니다.</p>
-
-    <h3>My Profile Page (Assignment 01)</h3>
-    <p>자기소개 웹페이지를 제작하고 Git/GitHub와 Vercel 배포를 실습했습니다.</p>
-
-    <h3>Style Practice (Assignment 02)</h3>
-    <p>동일한 HTML에 서로 다른 CSS와 Bootstrap을 적용해 화면이 어떻게 달라지는지 비교했습니다.</p>
-
-    <h2 id="hobbies">Hobbies</h2>
-    <ul>
-      <li>새로운 기술 문서 읽기</li>
-      <li>사이드 프로젝트 만들기</li>
-      <li>음악 감상</li>
-    </ul>
-
-    <h2 id="contact">Contact</h2>
-    <p>GitHub: <a href="https://github.com/22500349">github.com/22500349</a></p>
-  </div>
-
-  <!-- ===== Footer ===== -->
-  <div class="footer">
-    <p><a href="index.html">← Home (index.html 로 돌아가기)</a></p>
-    <p>© 2026 선승범 · OSS Assignment 02</p>
-  </div>
 </body>
+
 </html>
